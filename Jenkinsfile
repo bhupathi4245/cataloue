@@ -56,11 +56,6 @@ pipeline {
                         """
                         
                     }
-                    // Build Docker image with the version from package.json
-                    sh """
-                        docker build -t my-app:${appVersion} .
-                    """
-                   
                 }
             }
         }
